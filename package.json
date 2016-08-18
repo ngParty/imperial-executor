@@ -1,0 +1,38 @@
+{
+  "name": "imperial-executor",
+  "version": "1.0.0",
+  "description": "HTTP server for executing commands",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "start:watch": "onchange '*.ts' -- npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngParty/imperial-executor.git"
+  },
+  "keywords": [
+    "express",
+    "exec"
+  ],
+  "author": "mario@vejlupek.cz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngParty/imperial-executor/issues"
+  },
+  "homepage": "https://github.com/ngParty/imperial-executor#readme",
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "shelljs": "0.7.3"
+  },
+  "devDependencies": {
+    "@types/body-parser": "0.0.30",
+    "@types/express": "4.0.30",
+    "@types/node": "6.0.34",
+    "@types/shelljs": "0.3.28",
+    "onchange": "2.5.0",
+    "typescript": "2.0.0"
+  }
+}
