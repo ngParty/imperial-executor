@@ -8,7 +8,7 @@ interface CmdOutput {
 
 export function execDocker( command: string, id: string, options: string='' ): CmdOutput {
 
-    const sanitizedId = /[0-9a-z:]*/.exec( id )
+    const sanitizedId = /[-./0-9a-z:]*/.exec( id )
 
     const execString = `docker ${ command } ${ options } ${ sanitizedId }`
 
