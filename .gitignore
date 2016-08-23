@@ -38,3 +38,5 @@ jspm_packages
 
 # JS
 *.js
+
+ts-node
